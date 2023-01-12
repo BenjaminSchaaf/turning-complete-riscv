@@ -14,3 +14,8 @@ executable `target/riscv32i-unknown-none-elf/release/turning-complete-riscv`
 into Turing Complete and press run!
 
 Currently the only IO implemented is for the 80x24 console.
+
+## Save Game
+
+I've included the save game under `save/circuit.data`. The circuit was made
+under version 0.1055 Beta.
