@@ -1,0 +1,14 @@
+[package]
+name = "turning-complete-riscv"
+version = "0.1.0"
+edition = "2021"
+authors = ["Benjamin Schaaf"]
+license-file = "LICENSE"
+readme = "README.md"
+
+[dependencies]
+r0 = "1.0.0"
+
+[profile.release]
+strip = true
+
