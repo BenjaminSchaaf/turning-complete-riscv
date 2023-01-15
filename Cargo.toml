@@ -8,7 +8,19 @@ readme = "README.md"
 
 [dependencies]
 r0 = "1.0.0"
+arrayvec = { version = "0.7.2", default-features = false }
+bitfield = "0.14.0"
+num-traits = { version = "0.2", default-features = false }
+num-derive = { version = "0.3", default-features = false }
+chess = { path = "../chess", default-features = false }
 
 [profile.release]
 strip = true
+lto = true
 
+[profile.dev.build-override]
+opt-level = 3
+[profile.release.build-override]
+opt-level = 3
+[profile.test.build-override]
+opt-level = 3
