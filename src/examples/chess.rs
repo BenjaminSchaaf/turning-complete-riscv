@@ -95,7 +95,7 @@ fn draw_square(display: &mut Display, board: &Board, square: Square, highlight: 
         piece.to_index()
     } else {
         6
-    } * 7;
+    } * SQUARE_SIZE;
 
     let piece_color = if let Some(Color::White) = board.color_on(square) {
         DARK_PIECE_COLOR
